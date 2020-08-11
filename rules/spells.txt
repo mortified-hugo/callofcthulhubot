@@ -1,0 +1,15 @@
+Spells Checklist:
+
+1 - Casting a spell for the first time requires a Hard POW roll:
+-- If pass -> Spell happens and is learned
+-- If fails -> Nothing happens, the investigator didn't learn the spell, else push.
+-- If push fails: **dire consequences**, but the spell is still cast.
+-- If push not attempted: investigator needs to relearn the spell: Hard INT roll + 2D6 weeks of study
+
+2 - Once cast, the investigator can always use spell:
+-- Deduct Sanity and Magic Points and other costs;
+-- Do rolls as required by the spell;
+
+3 - Dire consequences:
+-- Determine if normal or powerful spell;
+-- Apply normal cost times 1D6
