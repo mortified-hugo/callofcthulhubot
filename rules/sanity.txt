@@ -1,0 +1,14 @@
+Sanity Checklist:
+
+1 - Keeper calls for a Sanity Check:
+2 - Investigator rolls for Sanity:
+If success, minimal Sanity loss applies;
+If fails, full sanity loss applies - investigator loses control for a moment;
+
+3 - If Sanity loss > 5 points: Roll INT:
+If passes - The investigator understand the true horrors before them:
+- BOUT OF MADNESS: Investigator loses touch with reality for 1D10 hours or 1D10 rounds if in combat. (Temporary Insanity)
+
+4 - If Sanity loss > 1/5 points of a investigator in one day: INDEFINITE INSANITY;
+
+5 - If SAN reaches 0: PERMANENT INSANITY: OFF TO THE LOONY HOUSE, EDWARD!

@@ -1,0 +1,20 @@
+Combat checklist:
+
+- Define order of action with DEX
+- Each investigator/npc/opponent has the following action options:
+-- Attack (Using Brawl or Firearms);
+-- Perform Maneuver;
+-- Flee;
+-- Cast a Spell;
+-- Other Actions;
+
+A Maneuver is an act other than simply inflicting damage (See bellow)
+"Other Actions" refer to any other action outside the fighting that require some time to execute;
+
+If Attack is chosen, a opposite roll of skills takes place, comparing the level of sucess of each player.
+
+- Once an attack is perfomed, the defender can choose to:
+-- Dodge (Using Dogde): In draw, defender wins/No damage is inflicted;
+-- Fight Back (Using Fighting): If draw, initiator wins. If both fail, no damage is inflicted;
+-- Maneuver (Same as fight back, but instead of inflicting damage, apply the manuever;
+

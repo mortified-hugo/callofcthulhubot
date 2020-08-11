@@ -1,0 +1,38 @@
+*Combat Damage Checklist*
+
+1 - See Damage value:
+- If damage is les than half Max HP: Regular Damage (First Aid heals 1HP, Medicine 1D3)
+- If damage equal or more than half Max HP: MAJOR WOUND
+-- Major Wound: 1) Fall Prone/2)Make CON Roll, if fail, fall unconscious;
+- If damage higher than Max HP: Death.
+
+2 - Hit points get to 0:
+- Have you taken a Major Wound?
+A - NO: Unconcious. Recover 1 hit point a day, First Aid (Heal 1HP), Medicine (Heal 1D3)
+
+B - YES: Dying (Check the dying box)
+Current round: someone applied a successful First Aid?
+    B1 - NO: CON roll at end of the round. If fails, DEATH. If pass First Aid maybe tried next round.
+
+    B2 - YES: Temporarily stabilized, gain +1HP
+    Within the next hour - someone applied a successful Medicine?
+    B2a - NO: Roll CON. If fail, back to B, if succeds, back to B2.
+
+    B2b - YES: Healing beggins. (Uncheck Dying)
+    Regain +1D3 HP.
+
+
+* MAJOR WOUND *
+
+A character with a Major Wound won't heal automatically.
+To recover from a major wound, make a CON roll each week.
+If fail, no healing.
+If success: Heal 1D3.
+If extreme success: Heal 2D3 and end Major Wound.
+If fumble: permanent damage (alter character backstory)
+
+If current HP > Half MaxHP, heal Major Wound.
+
+(Bonus die for good doctor/good environment/etc. Penalty die if in Poor conditions)
+
+

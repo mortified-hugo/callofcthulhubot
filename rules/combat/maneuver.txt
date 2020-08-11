@@ -1,0 +1,12 @@
+Maneuver checklist:
+
+1 - Compare builds:
+-- Smaller initiator (1 penalty die for each point/ If build difference is 3+, maneuver is impossible)
+2 - Make an attack roll with Fighting Skill;
+
+3 - Success in a maneuver can be used to:
+-- Disarming an opponent;
+-- Somehow placing the opponent in a disadvantage (penalty die)
+-- Escape when restrained;
+-- Pushing a opponent over a cliff or other similar fight ending actions;
+

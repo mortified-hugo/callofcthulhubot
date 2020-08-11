@@ -1,0 +1,37 @@
+Firearms fight checklist:
+
+1 - DEX Order is affected:
+To shoot, you have an advantage of DEX +50 if adversary is not armed with a firearm;
+
+2 - Determine difficulty of the shot:
+Bearer can be:
+- Within base range: regular difficulty roll
+- Long range (up to twice range): hard difficulty roll
+- Very long range (more than double the base range): extreme difficulty
+
+3 - Apply modifiers:
+- Penalty die if:
+-- Shooter in a moving car/plane etc.
+-- Target in cover or concealed
+-- Fast-moving target;
+-- Small target size
+
+- Bonus die if:
+-- Big target;
+-- Point-blank range;
+-- Shooter takes a turn to aim;
+
+* Automatic Fire *
+
+1 - Shooter pulls the trigger in a round (roll firearms ability)
+2 - Weapons keep firing;
+3 - Determine number of bullets per volley (ability w/ SMG/MG divided by 10, rounded down)
+4 - For each volley in a round, a penalty die, until weapon empty or trigger released;
+
+* Malfunctions *
+
+If attack roll results in a number >= malfunction number, the weapon malfuctions:
+- if small weapon: reload;
+- if large weapon/automatic: jam;
+Jams take 1D6 to fix and a successful Mechanical Repair or Firearm skill roll;
+Ex.: .45 revolver malfunction number is 100.

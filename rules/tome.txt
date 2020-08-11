@@ -1,0 +1,23 @@
+Reading a Tome Checklist:
+
+1 - Initial Reading: May require a Language Roll.
+-- If roll fail: the investigator may gather some idea of the content of the book, but not comprehend it.
+-- If roll succeeds:
+a) Add base Cthulhu Mythos hability for investigator;
+b) Lose sanity according to Tome Sanity rating (Non-Believers do not lose sanity)
+c) The reader gains some idea of the speels the book might contain;
+
+2 - Full Study:
+-- No reading roll require, as long as the investigator knows the language;
+a) Determine time in weeks based on the Tome;
+b) Once concluded, gain the complete amount of Cthulhu Mythos (It can't go beyond the Book's MR)
+c) Investigator lose sanity again based on Tome Sanity rating;
+d) Investigator gains a list of spells the book contains;
+
+3 - Spell/Ritual Studies:
+Once fully studied, an investigator can carry out the study of specific spells within.
+a) Define time of study in weeks based on the spell learning time;
+b) Studying spells don't incur in sanity loss. Using spells does.
+
+4 - Tomes as reference:
+A Mythos book can be checked for containing Eldrich lore against it's Mythos Rating.
