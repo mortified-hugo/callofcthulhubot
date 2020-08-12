@@ -1,0 +1,27 @@
+Chase Checklist:
+
+Chase set up:
+1) Speed Roll:
+- every investigator and NPC on the chase make a CON roll:
+-- on success: no change to MOV rating;
+-- on extreme success: +1 to MOV;
+-- on failure: -1 MOV;
+-- if in vehicle, use drive or relevant skill for that skill instead of CON;
+
+2) Compare Speeds:
+- Define location and establish map, defining an end point and possible hazards;
+- Define DEX order;
+- Define Actions:
+-- The character/vehicle with the slowest has 1 action
+-- Every other character gain movements based on that: Equal is 1, 1 bigger is 2 and so on.
+
+*CHASE*
+
+Players can take the following actions during chase:
+- Move one space Forward;
+- Initiate Attack (using the relevant skill);
+- Cast a spell;
+- Other action;
+
+During their turn, an investigator can take as many actions as they have available;
+Hazards may be face in the chase.
