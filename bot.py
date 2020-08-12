@@ -45,4 +45,10 @@ async def get_rule(ctx, subject='', *especification):
     await ctx.send(response)
 
 
+@bot.command(name='dhole', help="Dhole's House website for making characters")
+async def dhole_url(ctx):
+    response = 'https://www.dholeshouse.org/Default'
+    await ctx.send(response)
+
+
 bot.run(TOKEN)

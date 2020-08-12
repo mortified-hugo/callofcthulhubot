@@ -1,0 +1,18 @@
+Vehicle Checklist
+
+*Vehicle fails a hazard test*
+1) Define accident level:
+- Minor: Glancing blow/grazing lamp post/coliding with a person
+- Moderate: Hiting a cow/colision with a motorbike;
+- Severe: Collision with another car, Lamp post or tree;
+- Mayhem: Collision with a truck or a large tree;
+- Road Kill: Collision with train/Hit by a meteor! I don't know!
+2) Define build damage to vehicle and add delay (1D3 MOV actions);
+- Minor: 1D3 - 1
+- Moderate: 1D6
+- Severe: 1D10
+- Mayhem: 2D10
+- Road Kill: 5D10
+3) Roll damage for occupants: Same as build damage but HP*;
+*Armor not apply since damage is internal (yikes).
+
