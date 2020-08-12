@@ -26,7 +26,7 @@ async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
 
-@bot.command(name='rule', help='Quick guide for the game rules') # Rule Library
+@bot.command(name='rule', help='Quick guide for the game rules')  # Rule Library
 async def get_rule(ctx, subject='', *especification):
     if subject == '':
         response = 'What rule do you wish to know, my master?'
@@ -45,7 +45,7 @@ async def get_rule(ctx, subject='', *especification):
     await ctx.send(response)
 
 
-@bot.command(name='dhole', help="Dhole's House website for making characters")
+@bot.command(name='dhole', help="Dhole's House website for making characters")  # Dhole Reference
 async def dhole_url(ctx):
     response = 'https://www.dholeshouse.org/Default'
     await ctx.send(response)
