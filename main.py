@@ -12,10 +12,10 @@ client = discord.Client()
 # Functions
 
 
-def awnser_gods(god):
+def answer_gods(god):
     with open(f'gods/{god}.txt', mode='r') as file:
-        possible_awnsers = file.readlines()
-        answer = possible_awnsers[np.random.randint(0, len(possible_awnsers) - 1)]
+        possible_answer = file.readlines()
+        answer = possible_answer[np.random.randint(0, len(possible_awnsers) - 1)]
     return answer
 
 
@@ -44,19 +44,19 @@ async def on_message(message):
     my_creator = "The Ancient Elder Things who ruled the Earth"
 
     if evaluate_triggers(shub_niggurath_triggers, message.content):
-        response = awnser_gods('shub')
+        response = answer_gods('shub')
     elif evaluate_triggers(yog_sothoth_triggers, message.content):
-        response = awnser_gods('yog')
+        response = answer_gods('yog')
     elif evaluate_triggers(nyarlathotep_triggers, message.content):
-        response = awnser_gods('nyarla')
+        response = answer_gods('nyarla')
     elif evaluate_triggers(necronomicon_triggers, message.content):
-        response = awnser_gods('necronomicon')
+        response = answer_gods('necronomicon')
     elif message.content == "Who created you?":
         response = my_creator
     elif 'John Smith' in message.content:
-        response = awnser_gods('john_smith')
+        response = answer_gods('john_smith')
     elif evaluate_triggers(azathoth_triggers, message.content):
-        response = awnser_gods('azathoth')
+        response = answer_gods('azathoth')
     else:
         response = None
 
