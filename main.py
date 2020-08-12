@@ -14,7 +14,7 @@ client = discord.Client()
 
 def answer_gods(god):
     with open(f'gods/{god}.txt', mode='r') as file:
-        possible_answer = file.readlines()
+        possible_answers = file.readlines()
         answer = possible_answer[np.random.randint(0, len(possible_awnsers) - 1)]
     return answer
 
