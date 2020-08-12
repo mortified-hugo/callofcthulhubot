@@ -1,4 +1,5 @@
 import os
+import fnmatch
 import discord
 from dotenv import load_dotenv
 import numpy as np
@@ -29,6 +30,13 @@ async def on_ready():
 async def get_rule(ctx, subject='', *especification):
     if subject == '':
         response = 'What rule do you wish to know, my master?'
+    elif subject == 'list':
+        list_of_files = os.listdir('rules')
+        pattern = '*.txt'
+        list_of_rules = [entry.replace('.txt', '') for entry in list_of_files if fnmatch.fnmatch(entry, pattern)]
+        response = 'The following rules can be entered in the command:\n\n'
+        for rule in list_of_rules:
+            response = response + rule + '\n'
     else:
         try:
             response = read_rule(subject, *especification)

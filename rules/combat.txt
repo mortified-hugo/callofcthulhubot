@@ -8,7 +8,7 @@ Combat checklist:
 -- Cast a Spell;
 -- Other Actions;
 
-A Maneuver is an act other than simply inflicting damage (See bellow)
+A "maneuver" is an act other than simply inflicting damage (See 'rule combat maneuver')
 "Other Actions" refer to any other action outside the fighting that require some time to execute;
 
 If Attack is chosen, a opposite roll of skills takes place, comparing the level of sucess of each player.
@@ -18,3 +18,5 @@ If Attack is chosen, a opposite roll of skills takes place, comparing the level 
 -- Fight Back (Using Fighting): If draw, initiator wins. If both fail, no damage is inflicted;
 -- Maneuver (Same as fight back, but instead of inflicting damage, apply the manuever;
 
+For damage see 'rule combat damage'
+For firearms see 'rule combat firearms'
