@@ -25,3 +25,5 @@ Players can take the following actions during chase:
 
 During their turn, an investigator can take as many actions as they have available;
 Hazards may be face in the chase.
+
+If chased and chaser are in the same location, conflict may arise
