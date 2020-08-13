@@ -94,7 +94,7 @@ async def dhole_url(ctx):
     await ctx.send(response)
 
 
-@bot.command(name='date', help="Pulls info from the date from wikipedia(MM/DD/YYYY)")
+@bot.command(name='date', help="Pulls info from the date from wikipedia(MM/DD/YYYY)")  # Get's data from wikipedia
 async def get_date(ctx, date):
     rex = re.compile("^[0-9]{2}[/][0-9]{2}[/][0-9]{4}$")
     if not rex.match(date):
