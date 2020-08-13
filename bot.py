@@ -64,7 +64,9 @@ def check_end_month(log_date):
                 return False
 
 
-@bot.event  # Connection
+# Connection
+
+@bot.event 
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
