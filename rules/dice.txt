@@ -1,0 +1,12 @@
+Rolls in Call of Cthulhu
+
+Most rolls of Call of Cthulhu are a 'check roll' performed with a D100:
+- Fumble: Roll 100/if skill bellow 50, roll 96 or more;
+- Failure: Any number above the skill;
+- Success: Equal to or bellow skill level;
+- Hard Success: Half the skill or lower;
+- Extreme Success: 1/5 the skill or lower;
+- Critical Success: Roll of 01;
+
+In skill rolls, the Keeper can decide difficulty.
+In opposed rolls, levels of success are compared and penalty/bonus dies may be awarded;
