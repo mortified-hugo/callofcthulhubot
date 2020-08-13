@@ -1,0 +1,17 @@
+Improvement Checklist:
+
+1 - Improve skills: all skills that pass get improvement check:
+Improvement check consist of 2 phases:
+- Roll skill, if check FAILS, your skill improves
+- Roll 1D10, add that to skill;
+
+2 - Age up character:
+- Turn 20: Make 1 EDU Improvement check. Add 5 points between SIZ and STR;
+- From 40 on: Reduce 1 MOV every decade.
+- Turn 40/50/60: Make 1 EDU Improvement check. Deduct 5 points from STR, CON, or DEX. Reduce APP by 5.
+- Turn 70: Deduct 20 points from STR, CON or DEX. Reduce APP by 5.
+- Turn 80: Deduct 40 points from STR, CON or DEX. Reduce APP by 5.
+
+3 - At the end of each year, roll Credit Rating (House Rules):
+- If Hard Success: increase CR by 1D10. If CR above 50, requires Extreme Success;
+- If fumble: if character has more than 10, lose 1D10, else lose 1.
