@@ -64,6 +64,12 @@ def check_end_month(log_date):
                 return False
 
 
+def list_file(file_type, list_of_files):
+    pattern = f'*{file_type}'
+    end_list = [entry.replace(file_type, '') for entry in list_of_files if fnmatch.fnmatch(entry, pattern)]
+    return end_list
+
+
 # Connection
 
 @bot.event 
@@ -76,9 +82,8 @@ async def get_rule(ctx, subject='', *especification):
     if subject == '':
         response = 'What rule do you wish to know, my master?'
     elif subject == 'list':
-        list_of_files = os.listdir('rules')
-        pattern = '*.txt'
-        list_of_rules = [entry.replace('.txt', '') for entry in list_of_files if fnmatch.fnmatch(entry, pattern)]
+        rules_list = os.listdir('rules')
+        list_of_rules = list_file('.txt', rules_list)
         response = '```The following rules can be entered in the command:\n\n'
         for rule in list_of_rules:
             response = response + rule + '\n'
@@ -129,6 +134,33 @@ async def get_date(ctx, date):
             elif len(response) > 2000:
                 response = response[:1990] + '...'
     await ctx.send(response)
+
+
+@bot.command(name='show', help='Shows image of character in library')
+async def get_image(ctx, image_name):
+    if image_name == '':
+        response = "Please add image name to %show command"
+    elif image_name == 'list':
+        images_list = os.listdir('images')
+        list_of_images = list_file('.jpg', images_list) + list_file('.png', images_list)
+        response = '```The following rules can be entered in the command:\n\n'
+        for image in list_of_images:
+            response = response + image + '\n'
+        response = response + '```'
+    else:
+        try:
+            with open(f'images/{image_name}.jpg', 'rb') as image:
+                response = discord.File(image)
+        except FileNotFoundError:
+            try:
+                with open(f'images/{image_name}.png', 'rb') as image:
+                    response = discord.File(image)
+            except FileNotFoundError:
+                response = "``` image not found ```"
+    if isinstance(response, type('str')):
+        await ctx.send(response)
+    else:
+        await ctx.send(file=response)
 
 
 bot.run(TOKEN)
