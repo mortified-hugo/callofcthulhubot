@@ -79,10 +79,12 @@ async def get_rule(ctx, subject='', *especification):
         list_of_files = os.listdir('rules')
         pattern = '*.txt'
         list_of_rules = [entry.replace('.txt', '') for entry in list_of_files if fnmatch.fnmatch(entry, pattern)]
-        response = '``` The following rules can be entered in the command:\n\n'
+        response = '```The following rules can be entered in the command:\n\n'
         for rule in list_of_rules:
             response = response + rule + '\n'
         response = response + '```'
+    elif subject in ['link', 'serbia']:
+        response = read_rule(subject, *especification)
     else:
         try:
             response = "```" + read_rule(subject, *especification) + "```"
