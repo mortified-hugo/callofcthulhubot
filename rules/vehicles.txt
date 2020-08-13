@@ -1,6 +1,6 @@
 Vehicle Checklist
 
-*Vehicle fails a hazard test*
+**Vehicle fails a hazard test**
 1) Define accident level:
 - Minor: Glancing blow/grazing lamp post/coliding with a person
 - Moderate: Hiting a cow/colision with a motorbike;
