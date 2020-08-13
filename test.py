@@ -1,30 +1,6 @@
-import os
-
-import fnmatch
-import discord
-
+import re
 import requests
 from bs4 import BeautifulSoup
-import re
-from dotenv import load_dotenv
-
-import numpy as np
-from discord.ext import commands
-
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-
-bot = commands.Bot(command_prefix='%')
-
-
-def read_rule(*rule):
-    expression = ''
-    for word in rule:
-        expression = expression + '/' + word
-        print(expression)
-    with open(f'rules{expression}.txt', mode='r') as file:
-        answer = file.read()
-    return answer
 
 
 def check_date(log_date):
@@ -64,38 +40,7 @@ def check_end_month(log_date):
                 return False
 
 
-@bot.event  # Connection
-async def on_ready():
-    print(f'{bot.user.name} has connected to Discord!')
-
-
-@bot.command(name='rule', help='Quick guide for the game rules')  # Rule Library
-async def get_rule(ctx, subject='', *especification):
-    if subject == '':
-        response = 'What rule do you wish to know, my master?'
-    elif subject == 'list':
-        list_of_files = os.listdir('rules')
-        pattern = '*.txt'
-        list_of_rules = [entry.replace('.txt', '') for entry in list_of_files if fnmatch.fnmatch(entry, pattern)]
-        response = 'The following rules can be entered in the command:\n\n'
-        for rule in list_of_rules:
-            response = response + rule + '\n'
-    else:
-        try:
-            response = read_rule(subject, *especification)
-        except FileNotFoundError:
-            response = 'No such rule'
-    await ctx.send(response)
-
-
-@bot.command(name='dhole', help="Dhole's House website for making characters")  # Dhole Reference
-async def dhole_url(ctx):
-    response = 'https://www.dholeshouse.org/Default'
-    await ctx.send(response)
-
-
-@bot.command(name='date', help="Pull's info from the date from wikipedia(MM/DD/YYYY)")
-async def get_date(ctx, date):
+def get_date(date):
     rex = re.compile("^[0-9]{2}[/][0-9]{2}[/][0-9]{4}$")
     if not rex.match(date):
         response = 'Wrong Format for the date, please enter MM/DD/YYYY'
@@ -123,7 +68,20 @@ async def get_date(ctx, date):
                 response = "Something odd happened, maybe wikipedia does't have info on that month or that day"
             elif len(response) > 2000:
                 response = response[:1990] + '...'
-    await ctx.send(response)
+    return response
 
 
-bot.run(TOKEN)
+success = []
+failure = []
+
+for year in range(1900, 2001):
+    response = get_date(f'01/01/{str(year)}')
+    if response == "Something odd happened, maybe wikipedia does't have info on that month or that day":
+        failure.append(year)
+    else:
+        success.append(year)
+
+print(success)
+print(len(success))
+print(failure)
+print(len(failure))
