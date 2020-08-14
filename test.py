@@ -28,7 +28,7 @@ def check_end_month(log_date):
         else:
             return False
     elif int(log_date[0]) == 2:
-        if int(log_date[2]) % 4 and int(log_date[2]) != 1900:
+        if int(log_date[2]) % 4 == 0 and (int(log_date[2]) % 100 != 0 or int(log_date[2]) % 400 == 0):
             if log_date[1] == 29:
                 return True
             else:
