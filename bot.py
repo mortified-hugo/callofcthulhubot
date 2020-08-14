@@ -44,18 +44,24 @@ def check_end_month(log_date):
     if int(log_date[0]) in [1, 3, 7, 8, 10, 12]:
         if int(log_date[1]) == 31:
             return True
+        else:
+            return False
     elif int(log_date[0]) in [4, 6, 9, 11]:
         if int(log_date[1]) == 30:
             return True
-    elif int(log_date[0]) == 2:
-        if int(log_date[2]) % 4 == 0 and (int(log_date[2]) % 100 != 0 or int(log_date[2]) % 400 == 0):
-            if log_date[1] == 29:
-                return True
         else:
-            if log_date[1] == 28:
-                return True
+            return False
     else:
-        return False
+        if int(log_date[2]) % 4 == 0 and (int(log_date[2]) % 100 != 0 or int(log_date[2]) % 400 == 0):
+            if int(log_date[1]) == 29:
+                return True
+            else:
+                return False
+        else:
+            if int(log_date[1]) == 28:
+                return True
+            else:
+                return False
 
 
 def list_file(file_type, list_of_files):
@@ -111,7 +117,7 @@ async def get_date(ctx, date):
         if check_date(log):
             response = 'Wrong date, be sure to use the MM/DD/YYYY format'
         else:
-            log[1] = (str(int(log[1])))
+            log[1] = str(int(log[1]))
             next_day = str(int(log[1]) + 1)
             url = f"https://en.wikipedia.org/wiki/{months[log[0]]}_{log[2]}"
             r = requests.get(url)
@@ -156,5 +162,5 @@ async def get_image(ctx, image_name):
     else:
         await ctx.send(file=response)
 
-
+print(str(check_end_month('02/29/1916'.split('/'))))
 bot.run(TOKEN)
