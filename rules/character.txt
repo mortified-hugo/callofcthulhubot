@@ -1,0 +1,21 @@
+Character Info:
+
+1) Characteristics;
+STR - Muscle power, physical strength
+CON - Health, vigor and vitality
+SIZ - Representation of body size and weight
+DEX - How quick or slow is an investigator
+APP - Attractiveness
+INT - How smart an investigator is
+POW - Force of Will
+EDU - Formal Education
+
+2) Skills:
+Specific Skills characters learn throwout life;
+From 1 to 100
+
+3) Backstory:
+A character's backstory may affect their decision of who they are;
+
+Type "%rule character creation" for the character creation checklist;
+Type "%rule character backstory" for backstory details checklist;

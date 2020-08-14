@@ -1,0 +1,38 @@
+Character Creation checklist:
+
+1) Define "Backstory pitch":
+- Define, with the keeper, occupation, age, origin, etc.
+
+2) Define characteristics:
+- Quick fire method - Allocate: 80, 70, 60, 60, 50, 50, 50, 40;
+- Dice-Roll method:
+-- for STR, CON, DEX, POW and APP - Roll 3D6 x 5 each;
+-- for EDU, INT and SIZ - Rol (2D6 + 6) X 5;
+- Point Buy - Total of 460 points;
+-- STR, CON, DEX, POW, APP and EDU - MIN 15/MAX 90
+-- INT and SIZ  - MIN 40/MAX 90
+
+3) Apply age modifiers for characteristics:
+- 15 to 19: Deduct 5 from STR and SIZ. EDU - 5. Roll Twice for Luck;
+- 20 to 39: Make 1 EDU Improvement check (See %rule improvement)
+- 40 to 49: Make 2 EDU Improvement checks. Deduct 5 points from STR, CON and DEX. APP - 5.
+- 50 to 59: Make 3 EDU Improvement checks. Deduct 10 points from STR, CON and DEX. APP - 10.
+- 60 to 69: Make 4 EDU Improvement checks. Deduct 20 points from STR, CON and DEX. APP - 15.
+- 70 to 79: Make 4 EDU Improvement checks. Deduct 40 points from STR, CON and DEX.  APP - 20.
+- 80+: Make 4 EDU Improvement checks. Deduct 80 points from STR, CON and DEX.  APP - 25.
+
+4) Define HP, Sanity and MP;
+
+5) Define min base skills:
+Credit Rating: Minimum defined by the occupation;
+Own Language: EDU
+Dogde: Half DEX
+
+6) Define occupation skill:
+Check 8 occupation skills;
+Define points to be added to them based on occupation (Usually 4 x EDU)
+
+7) Define Personal skills:
+2 x INT
+
+8) Refine backstory: see %rule character backstory
