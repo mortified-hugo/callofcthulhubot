@@ -18,20 +18,14 @@ def check_date(log_date):
 
 def check_end_month(log_date):
     if int(log_date[0]) in [1, 3, 7, 8, 10, 12]:
-        if int(log_date[1]) == 31:
-            return True
+        return int(log_date[1]) == 31
     elif int(log_date[0]) in [4, 6, 9, 11]:
-        if int(log_date[1]) == 30:
-            return True
-    elif int(log_date[0]) == 2:
-        if int(log_date[2]) % 4 == 0 and (int(log_date[2]) % 100 != 0 or int(log_date[2]) % 400 == 0):
-            if log_date[1] == 29:
-                return True
-        else:
-            if log_date[1] == 28:
-                return True
+        return int(log_date[1]) == 30
     else:
-        return False
+        if int(log_date[2]) % 4 == 0 and (int(log_date[2]) % 100 != 0 or int(log_date[2]) % 400 == 0):
+            return int(log_date[1]) == 29
+        else:
+            return int(log_date[1]) == 28
 
 
 def get_date(date):
