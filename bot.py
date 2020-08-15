@@ -162,5 +162,5 @@ async def get_image(ctx, image_name):
     else:
         await ctx.send(file=response)
 
-print(str(check_end_month('02/29/1916'.split('/'))))
+
 bot.run(TOKEN)
