@@ -17,6 +17,28 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='%')
 
 
+def roll_d100(p_or_b='no', factor=0):
+    if p_or_b == 'p' or p_or_b == 'b':
+        if factor == 0:
+            factor = 1
+        d_10 = np.random.randint(1, 11)
+        list_of_d_100 = []
+        for n in range(0, factor):
+            d_100 = np.random.randint(0, 10)
+            list_of_d_100.append(d_100)
+        if p_or_b == 'p':
+            final_d_100 = max(list_of_d_100)
+        else:
+            final_d_100 = min(list_of_d_100)
+        total_dice_roll = 10 * final_d_100 + d_10
+        return d_10, final_d_100, total_dice_roll
+    else:
+        d_10 = np.random.randint(1, 11)
+        d_100 = np.random.randint(0, 10)
+        total_dice_roll = 10 * d_100 + d_10
+        return d_10, d_100, total_dice_roll
+
+
 def read_rule(*rule):
     expression = ''
     for word in rule:
@@ -149,6 +171,52 @@ async def get_image(ctx, image_name):
         await ctx.send(response)
     else:
         await ctx.send(file=response)
+
+
+@bot.command(name='skill', help='Pass skill with the number from 1 to 99 as per relevant investigator skill')
+async def skill_roll(ctx, skill, p_or_b='', factor='0'):
+    try:
+        skill_int = int(skill)
+
+        if skill_int <= 0 or skill_int >= 100:
+            response = 'Skill not in range'
+        else:
+            d_10, d_100, total_dice_roll = roll_d100(p_or_b, int(factor))
+            if total_dice_roll == 100:
+                state = 'Fumble!'
+            elif skill_int < 50 and total_dice_roll >= 96:
+                state = 'Fumble!'
+            elif total_dice_roll > skill_int:
+                state = 'Failure'
+            elif total_dice_roll == 1:
+                state = "Critical Success!!!"
+            elif total_dice_roll <= round(skill_int/5):
+                state = 'Extreme Success!!'
+            elif round(skill_int/5) < total_dice_roll <= round(skill_int/2):
+                state = 'Hard Sucess!'
+            else:
+                state = 'Success!'
+            response = f':game_die:\n' \
+                       f'You rolled {d_100}0 and {d_10}, to a total of {total_dice_roll}\n' \
+                       f"That's a **{state}**"
+        await ctx.send(response)
+
+    except ValueError:
+        if skill == '':
+            response = '```To roll skill, please add a skill number from 1 to 99```'
+        else:
+            response = '```Incorrect value for skill, must be a number from 1 to 99```'
+        await ctx.send(response)
+
+
+@bot.command(name='r', help='Quickly rolls 1D100 for you')
+async def quick_roll(ctx):
+    d_10 = np.random.randint(1, 11)
+    d_100 = np.random.randint(0, 10)
+    total_dice_roll = 10 * d_100 + d_10
+    response = f':game_die:\n' \
+               f'You rolled {d_100}0 and {d_10}, to a total of {total_dice_roll}\n'
+    await ctx.send(response)
 
 
 bot.run(TOKEN)
