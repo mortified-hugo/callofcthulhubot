@@ -211,9 +211,7 @@ async def skill_roll(ctx, skill, p_or_b='', factor='0'):
 
 @bot.command(name='r', help='Quickly rolls 1D100 for you')
 async def quick_roll(ctx):
-    d_10 = np.random.randint(1, 11)
-    d_100 = np.random.randint(0, 10)
-    total_dice_roll = 10 * d_100 + d_10
+    d_10, d_100, total_dice_roll = roll_d100()
     response = f':game_die:\n' \
                f'You rolled {d_100}0 and {d_10}, to a total of {total_dice_roll}\n'
     await ctx.send(response)
