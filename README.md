@@ -2,6 +2,10 @@
 
 Shoggoth Helper is a Discord Bot for the Call of Cthulhu 7th edition tabletop RPG. It's intent is to be a simple tool used to facilitate the Game's Master, known in Call of Cthulhu as the Keeper, to run their game with their team of investigators in any Discord Server. This bot is best paired with other dice rolling bots.
 
+## Support
+
+[Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hugo.sjrp@gmail.com&lc=US&no_note=0&item_name=thank+you+for+supporting+my+work!&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted) if you can to help me do more coding!!!
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
