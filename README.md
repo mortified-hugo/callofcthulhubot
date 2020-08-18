@@ -35,17 +35,17 @@ Use pip install to install the libraries present in requirements.txt
 Some IDEs will provide you with the option to install them already.
 ```
 
+## Running on Discord
+
+Once you set it up for running in it locally, run bot.py and main.py to get the bot running. You can locally personalize your bot by adding .jpg and .png files to images, add, change and edit rule checklists in rules in .txt and even add unsettling references to the gods folder. Right now, those files are populated with stuff from my personal use, that you can use for testing.
+
 ## Built With
 
 * [PyCharm](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html) - IDE
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+At the moment, we will not be taking Pull requests, but feel free to clone this repository.
 
 ## Authors
 
