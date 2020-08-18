@@ -64,4 +64,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Fernando Pizzardo [check his github](https://github.com/Pizzardo-Luck) for testing and helping with solution, check out his Hal version for CyberPunk RPG
-* Nishant Kaushik [check his github](https://github.com/nixant) for mentoring and assisnting with getting my first github project running
+* Nishant Kaushik [check his github](https://github.com/nixant) for mentoring and assisting with getting my first github project running
