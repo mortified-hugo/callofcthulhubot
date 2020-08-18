@@ -2,6 +2,10 @@
 
 Shoggoth Helper is a Discord Bot for the Call of Cthulhu 7th edition tabletop RPG. It's intent is to be a simple tool used to facilitate the Game's Master, known in Call of Cthulhu as the Keeper, to run their game with their team of investigators in any Discord Server. This bot is best paired with other dice rolling bots.
 
+## Support
+
+[Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hugo.sjrp@gmail.com&lc=US&no_note=0&item_name=thank+you+for+supporting+my+work!&cn=&curency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted) if you can to help me do more coding!!!
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -35,17 +39,17 @@ Use pip install to install the libraries present in requirements.txt
 Some IDEs will provide you with the option to install them already.
 ```
 
+## Running on Discord
+
+Once you set it up for running in it locally, run bot.py and main.py to get the bot running. You can locally personalize your bot by adding .jpg and .png files to images, add, change and edit rule checklists in rules in .txt and even add unsettling references to the gods folder. Right now, those files are populated with stuff from my personal use, that you can use for testing.
+
 ## Built With
 
 * [PyCharm](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html) - IDE
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+At the moment, we will not be taking Pull requests, but feel free to clone this repository.
 
 ## Authors
 
