@@ -55,7 +55,7 @@ At the moment, we will not be taking Pull requests, but feel free to clone this 
 
 * **Hugo Padilha Figueira** - [mortified-hugo](https://github.com/mortified-hugo)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/mortified-hugo/callofcthulhubot/contributors) who participated in this project.
 
 ## License
 
