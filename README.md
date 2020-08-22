@@ -51,6 +51,10 @@ Once you set it up for running in it locally, run bot.py and main.py to get the 
 
 At the moment, we will not be taking Pull requests, but feel free to clone this repository.
 
+## Disclaimers
+
+Rules .txt files are not ment to substitute the Keeper's book. The images are also only ment for the purpose of testing, I do not claim ownership for any of them.
+
 ## Authors
 
 * **Hugo Padilha Figueira** - [mortified-hugo](https://github.com/mortified-hugo)
