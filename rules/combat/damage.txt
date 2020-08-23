@@ -1,7 +1,7 @@
 *Combat Damage Checklist*
 
 1 - See Damage value:
-- If damage is les than half Max HP: Regular Damage (First Aid heals 1HP, Medicine 1D3)
+- If damage is less than half Max HP: Regular Damage (First Aid heals 1HP, Medicine 1D3)
 - If damage equal or more than half Max HP: MAJOR WOUND
 -- Major Wound: 1) Fall Prone/2)Make CON Roll, if fail, fall unconscious;
 - If damage higher than Max HP: Death.
