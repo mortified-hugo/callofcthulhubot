@@ -20,7 +20,7 @@ def answer_gods(god):
 
 
 def evaluate_triggers(trigger, evaluator):
-    return any([True for word in trigger if word in evaluator])
+    return any(word in evaluator for word in trigger)
 
 
 # Events
