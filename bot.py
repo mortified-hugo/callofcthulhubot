@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 
 import numpy as np
 from discord.ext import commands
+from mremachine.functions import enconding, decoding
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -214,6 +215,18 @@ async def quick_roll(ctx):
     d_10, d_100, total_dice_roll = roll_d100()
     response = f':game_die:\n' \
                f'You rolled {d_100}0 and {d_10}, to a total of {total_dice_roll}\n'
+    await ctx.send(response)
+
+
+@bot.command(name='encode')
+async def encode(ctx, word, key):
+    response = f'Your new code is {enconding(word, key)}'
+    await ctx.send(response)
+
+
+@bot.command(name='decode')
+async def decode(ctx, word, key):
+    response = f'Your word is {decoding(word, key)}'
     await ctx.send(response)
 
 
